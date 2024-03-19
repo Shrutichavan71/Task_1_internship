@@ -1,0 +1,55 @@
+package studentgradecalculator;
+import java.util.*;
+public class subjectmarks {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+	    int DBMS,PA,SE,CG,MIII;
+	    float percentage,total;
+	    
+	    System.out.println(" please enter the marks of five sbject:");
+	    
+	  
+	    System.out.println("enter the value of dbms:");
+		DBMS = sc.nextInt();
+	    System.out.println("enter the marks of pa:");
+		PA = sc.nextInt();
+		System.out.println("enter the marks of se:");
+		SE =sc.nextInt();
+		System.out.println("enter the value of cg:");
+		CG = sc.nextInt();
+		System.out.println("enter the value of mIII:");
+		MIII = sc.nextInt();
+		
+		
+		total = DBMS + PA + SE + CG + MIII;
+		System.out.println("total marks =" + total);
+		
+		percentage = total/5;
+		System.out.println("percentage =" + percentage);
+		
+		if(percentage >= 90) {
+			System.out.println("grade O");
+		}
+		else if(percentage >= 80)
+		{
+			System.out.println(" grade A");
+		}
+		else if(percentage >= 70)
+		{
+			System.out.println("grade B ");
+		}
+		else if(percentage <= 70)
+		{
+			System.out.println("grade C ");
+		}
+		else if(percentage <= 60) {
+			System.out.println(" grade D");
+		}
+		else {
+			System.out.println("grade E");
+		}
+	}
+
+}
